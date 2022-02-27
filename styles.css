@@ -1,0 +1,168 @@
+﻿html, body {
+    height: 100%;
+}
+
+body {
+    background: radial-gradient (ellipse at center, rgba(245,254,234,1) 0%, rgba(245,254,234,1) 35%, #B7E8EB 100%);
+    overflow: hidden;
+}
+p{
+    color: #FFFFFF;
+}
+.ax{
+    font-size: 2em;
+    text-decoration: line-through;
+}
+.bx{
+    font-weight: bold;
+}
+.blue-parent {
+    width: 100%;
+    height: 7%;
+    background: #016890;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.blue-child {
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x;
+    position: absolute;
+    min-height: 197px;
+    position: absolute;
+    width: 6400px;
+    top: -197px;
+    animation: wave-one 8s cubic-bezier (0.37, 0.44, 0.64, 0.54) infinite;
+    transform: translate3d (0, 0, 0);
+}
+
+    .blue-child:nth-of-type(2) {
+        top: -175px;
+        animation: wave-one 8s cubic-bezier( 0.37, 0.44, 0.64, 0.54) -.124s infinite, crests 8s ease -1.24s infinite;
+        opacity: 1;
+    }
+
+@keyframes wave-one {
+    0% {
+        margin-left: 0;
+    }
+
+    100% {
+        margin-left: -1600px;
+    }
+}
+
+@keyframes crests {
+    0%, 100% {
+        transform: translate3d(0,-24px,0);
+    }
+
+    50% {
+        transform: translate3d(0,5px,0);
+    }
+    /*下からメアド、パスワード入力フォーム*/
+    @import url('https://fonts.googleapis.com/css?family=Roboto'); body {
+        background-color: #0288D1;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .stuff {
+        width: 25vw;
+    }
+
+    .textBox {
+        position: relative;
+        width: 100%;
+        padding-top: 10px;
+        height: 45px;
+        display: inline-flex;
+        margin-bottom: 3vh;
+    }
+
+    .textBox .text {
+        font-weight: 500;
+        width: calc(100% - 2vw);
+        height: 27px;
+        padding-left: 0.5vw;
+        background-color: transparent;
+        color: white;
+        position: absolute;
+        bottom: 0px;
+        outline: none;
+        border-style: solid;
+        border-color: #E3E7EA;
+        border-width: 0px 0px 2px 0px;
+        font-size: 20px;
+        -webkit-transition: border-color 0.45s linear;
+        transition: border-color 0.45s linear;
+    }
+
+    .textBox > input.text:focus {
+        border-color: #B2FF59;
+    }
+
+    .textBox .label {
+        opacity: 0.1;
+        pointer-events: none;
+        z-index: 1;
+        color: #C0C0C0;
+        position: absolute;
+        padding-left: 0.5vw;
+        bottom: 3px;
+        font-size: 20px;
+        font-weight: 300;
+        -webkit-transition-property: opacity bottom font-size;
+        transition-property: opacity bottom font-size;
+        -webkit-transition-duration: 0.45s;
+        transition-duration: 0.45s;
+        -webkit-transition-timing-function: cubic-bezier(.68,-0.55,.27,1.55);
+        transition-timing-function: cubic-bezier(.68,-0.55,.27,1.55);
+    }
+
+    .textBox .error {
+        position: absolute;
+        margin-top: 48px;
+        width: 100%;
+        color: #e74c3c;
+        text-align: center;
+    }
+
+    .textBox > input.text:focus ~ .label, .textBox > input.text:not([value=""]) ~ .label {
+        opacity: 1;
+        z-index: 1;
+        bottom: 55%;
+        font-size: 12px;
+    }
+
+    .textBox > input.text:focus ~ .label {
+        color: #B2FF59;
+    }
+
+    .textBox ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        color: #2B2B2B;
+        font-size: 20px;
+        font-weight: 200;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .textBox ::-moz-placeholder { /* Firefox 19+ */
+        color: #2B2B2B;
+        font-size: 20px;
+        font-weight: 200;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .textBox :-ms-input-placeholder { /* IE 10+ */
+        color: #2B2B2B;
+        font-size: 20px;
+        font-weight: 200;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .textBox :-moz-placeholder { /* Firefox 18- */
+        color: #2B2B2B;
+        font-size: 20px;
+        font-weight: 200;
+        font-family: 'Roboto', sans-serif;
+    }
+}
