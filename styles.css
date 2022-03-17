@@ -9,6 +9,16 @@ body {
 p{
     color: #FFFFFF;
 }
+/* 横並び */
+
+.flex {
+    display: flex; /*横並び*/
+}
+
+    .flex .text {
+        margin: 0 0 0 20px;
+        padding: 0;
+    }
 .ax{
     font-size: 2em;
     text-decoration: line-through;
