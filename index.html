@@ -8,12 +8,25 @@
     <title>LikesHomeBrewLauncher...</title>
 </head>
 <body bgcolor="000000">
-    <p>Hello</p>
-    <p>Happy Birthday  隼人 !</p>
+    <p>Hello here</p>
+    <p>
+        Now it is <span id="real-time"></span>
+    </p>
+
+    <script type="text/javascript">function Time() {
+            var realTime = new Date();
+            var hour = realTime.getHours();
+            var minutes = realTime.getMinutes();
+            var seconds = realTime.getSeconds();
+            var text = hour + ":" + minutes + ":" + seconds;
+            document.getElementById("real-time").innerHTML = text;
+        }
+        setInterval('Time()', 1000);</script>
+    <p>Happy Birthday  歩夢 !</p>
     <a href="https://www.google.com/">Google</a>
     <a href="https://sh.higo.ed.jp/touryo/">東稜高校非公式サイト</a>
     <a href="https://0xfast.github.io/418.html">What`s this ?</a>
-    <a href="https://">
+    <video src="Fuushi.mp4" controls></video>
     <p class="ax">取り消し線をここに引いてます。Strikethrough is drowing here.</p>
     <p class="bx">BX</p>
     <div class="blue-parent">
